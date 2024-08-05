@@ -337,6 +337,8 @@ double edf_qhull_points(edf_points_t *cur_points) {
   /* Translate the points to have the origin within the interior */
   trans_points(cur_points);
 
+  //maxima-of-vectors should go here  (?)
+
   /* Position points in a matrix , an input format required by qh_new_qhull */
   numpoints = cur_points->num_points;
   for (i = numpoints; i--;) {
